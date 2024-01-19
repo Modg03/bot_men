@@ -10,11 +10,16 @@ menu = [
 menu = InlineKeyboardMarkup(inline_keyboard=menu)
 
 search_countries = [
-    [InlineKeyboardButton(text="Німеччина🇩🇪", callback_data="choosen_germany")],
+   # [InlineKeyboardButton(text="Німеччина🇩🇪", callback_data="choosen_germany")],
     [InlineKeyboardButton(text="Польща🇵🇱", callback_data="choosen_poland")],
-    [InlineKeyboardButton(text="Литва🇱🇹", callback_data="choosen_lithuania")],
-    [InlineKeyboardButton(text="Новопоштляндія", callback_data="choosen_pass1")],
-    [InlineKeyboardButton(text="Многомодгія", callback_data="choosen_pass2")]
+   # [InlineKeyboardButton(text="Литва🇱🇹", callback_data="choosen_lithuania")],
 ]
 
 search_countries = InlineKeyboardMarkup(inline_keyboard=search_countries)
+
+add_item = [
+    #[InlineKeyboardButton(text="Відправити запит на додавання в базу даних", callback_data="add_request")],
+    [InlineKeyboardButton(text="Головне меню", callback_data="exit_menu")]
+]
+
+add_item = InlineKeyboardMarkup(inline_keyboard=add_item)
