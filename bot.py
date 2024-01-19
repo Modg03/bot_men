@@ -20,7 +20,6 @@ dp = Dispatcher()
 
 
 @dp.message(CommandStart())
-@dp.message(CommandStart())
 async def command_start_handler(message: types.Message):
     if message.chat.type == 'private':
         # Отримати ім'я користувача
